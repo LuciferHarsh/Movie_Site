@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Movie App</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="app-container">
+        <header>
+            <!--this div/section is for Light Mode Logo -->
+            <div class="lightmode_logo">
+                <img src="C:/Users/Dell/Desktop/PraisArray/website_logo.png" alt="Light Mode Logo">
+            </div>
+
+            <!--this div/section is for  Dark Mode Logo -->
+            <div class="darkmode_logo">
+                <img src="C:/Users/Dell/Desktop/PraisArray/darkmode_logo.png" alt="Dark Mode Logo">
+            </div>
+
+            <!-- this div/section is for Search and Filter Section -->
+            <div class="search-container">
+                <input id="searchInput" type="text" placeholder="Search for a movie...">
+                <button id="searchButton">Search</button>
+                <button id="toggleThemeButton" class="toggle-button">Dark Mode</button>
+            </div>
+<!-- this division/section is used for the button called generes  -->
+            <div class="genre-filter">
+                <select id="genreSelect">
+                    <option value="">All Genres</option>
+                    <option value="28">Action</option>
+                    <option value="35">Comedy</option>
+                    <option value="18">Drama</option>
+                    <option value="10749">Romance</option>
+
+                    
+                </select>
+            </div>
+        </header>
+<!--This Division is for the loading spiiner -->
+        <div id="spinner" class="spinner"></div>
+
+        <!-- Movies Container -->
+        <main id="moviesContainer">
+            <!-- Movies will be dynamically loaded here -->
+        </main>
+    </div>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2024 Movie Galaxy. All Rights Reserved.</p>
+        <ul class="footer-links">
+            <li><a href="#">About</a></li>
+            <li><a href="#">Contact</a></li>
+            <li><a href="#">Privacy Policy</a></li>
+        </ul>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
